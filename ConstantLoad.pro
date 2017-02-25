@@ -1,4 +1,4 @@
-update=Sat 25 Feb 2017 07:59:28 AEST
+update=Sat 25 Feb 2017 10:06:59 AEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,7 +25,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=
+LibDir=/home/michael/Projects/contextual/ConstantLoad
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -56,5 +56,6 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
+LibName30=constantLoad
 [general]
 version=1
