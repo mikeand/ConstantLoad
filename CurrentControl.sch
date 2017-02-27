@@ -1,0 +1,233 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:constantLoad
+LIBS:ConstantLoad-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LMV358 U?
+U 1 1 58B3F1F0
+P 3940 2690
+F 0 "U?" H 3940 2890 50  0000 L CNN
+F 1 "LMV358" H 3940 2490 50  0000 L CNN
+F 2 "" H 3940 2690 50  0000 C CNN
+F 3 "" H 3940 2690 50  0000 C CNN
+	1    3940 2690
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58B3F1F8
+P 4790 3170
+F 0 "R?" V 4870 3170 50  0000 C CNN
+F 1 ".1" V 4790 3170 50  0000 C CNN
+F 2 "" V 4720 3170 50  0000 C CNN
+F 3 "" H 4790 3170 50  0000 C CNN
+F 4 "AC01000001007JA100" V 4790 3170 60  0001 C CNN "MPN"
+	1    4790 3170
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_DGS Q?
+U 1 1 58B3F206
+P 5490 2690
+F 0 "Q?" H 5690 2740 50  0000 L CNN
+F 1 "IRL640A" H 5690 2640 50  0000 L CNN
+F 2 "" H 5690 2790 50  0000 C CNN
+F 3 "" H 5490 2690 50  0000 C CNN
+F 4 "IRL640A" H 5490 2690 60  0001 C CNN "MPN"
+	1    5490 2690
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58B3F20D
+P 2860 3370
+F 0 "R?" V 2940 3370 50  0000 C CNN
+F 1 "R" V 2860 3370 50  0000 C CNN
+F 2 "" V 2790 3370 50  0000 C CNN
+F 3 "" H 2860 3370 50  0000 C CNN
+	1    2860 3370
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58B3F214
+P 3840 3070
+F 0 "#PWR?" H 3840 2820 50  0001 C CNN
+F 1 "GND" H 3840 2920 50  0000 C CNN
+F 2 "" H 3840 3070 50  0000 C CNN
+F 3 "" H 3840 3070 50  0000 C CNN
+	1    3840 3070
+	1    0    0    -1  
+$EndComp
+$Comp
+L POT RV?
+U 1 1 58B3F21A
+P 2860 2870
+F 0 "RV?" V 2685 2870 50  0000 C CNN
+F 1 "POT" V 2760 2870 50  0000 C CNN
+F 2 "" H 2860 2870 50  0000 C CNN
+F 3 "" H 2860 2870 50  0000 C CNN
+	1    2860 2870
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2860 2720
+$Comp
+L GND #PWR?
+U 1 1 58B3F222
+P 3330 2350
+F 0 "#PWR?" H 3330 2100 50  0001 C CNN
+F 1 "GND" H 3330 2200 50  0000 C CNN
+F 2 "" H 3330 2350 50  0000 C CNN
+F 3 "" H 3330 2350 50  0000 C CNN
+	1    3330 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 58B3F228
+P 3640 2240
+F 0 "C?" H 3665 2340 50  0000 L CNN
+F 1 "C" H 3665 2140 50  0000 L CNN
+F 2 "" H 3678 2090 50  0000 C CNN
+F 3 "" H 3640 2240 50  0000 C CNN
+	1    3640 2240
+	0    1    1    0   
+$EndComp
+Text Label 3840 2120 0    60   ~ 0
+3.3V
+Wire Wire Line
+	4790 3020 4790 2940
+Wire Wire Line
+	3840 2980 3840 3070
+Wire Wire Line
+	3450 2790 3450 3400
+Wire Wire Line
+	3450 3400 4470 3400
+Wire Wire Line
+	4470 3400 4470 2940
+Wire Wire Line
+	4470 2940 5590 2940
+Wire Wire Line
+	3840 1810 3840 2390
+Wire Wire Line
+	3450 2790 3640 2790
+Wire Wire Line
+	2860 3020 2860 3220
+Wire Wire Line
+	3640 2590 3130 2590
+Wire Wire Line
+	3130 2590 3130 3100
+Wire Wire Line
+	3130 3100 2860 3100
+Connection ~ 2860 3100
+Wire Wire Line
+	2860 3520 2860 3700
+Wire Wire Line
+	5590 2940 5590 2890
+Connection ~ 4790 2940
+Wire Wire Line
+	3790 2240 3840 2240
+Connection ~ 3840 2240
+Wire Wire Line
+	3490 2240 3330 2240
+Wire Wire Line
+	3330 2240 3330 2350
+Wire Wire Line
+	3010 2870 3060 2870
+Wire Wire Line
+	3060 2870 3060 1810
+Wire Wire Line
+	5590 2060 5590 2490
+$Comp
+L +3.3V #PWR?
+U 1 1 58B3F27A
+P 3460 1720
+F 0 "#PWR?" H 3460 1570 50  0001 C CNN
+F 1 "+3.3V" H 3460 1860 50  0000 C CNN
+F 2 "" H 3460 1720 50  0000 C CNN
+F 3 "" H 3460 1720 50  0000 C CNN
+	1    3460 1720
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3060 1810 3840 1810
+Wire Wire Line
+	3460 1720 3460 1810
+Connection ~ 3460 1810
+Text HLabel 5450 2060 0    60   Input ~ 0
+Current_Sink_In
+Wire Wire Line
+	5450 2060 5590 2060
+$Comp
+L R R?
+U 1 1 58B3F5CF
+P 4780 2690
+F 0 "R?" V 4860 2690 50  0000 C CNN
+F 1 "1K" V 4780 2690 50  0000 C CNN
+F 2 "" V 4710 2690 50  0000 C CNN
+F 3 "" H 4780 2690 50  0000 C CNN
+F 4 "Value" H 4780 2690 60  0001 C CNN "MPN"
+	1    4780 2690
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4240 2690 4630 2690
+Wire Wire Line
+	4930 2690 5290 2690
+Text HLabel 4960 2280 0    60   Input ~ 0
+FET_Gate
+Wire Wire Line
+	4960 2280 5130 2280
+Wire Wire Line
+	5130 2280 5130 2690
+Connection ~ 5130 2690
+Text HLabel 5340 3700 2    60   Input ~ 0
+Current_Sink_GND
+Wire Wire Line
+	4790 3320 4790 3700
+Wire Wire Line
+	2860 3700 5340 3700
+Connection ~ 4790 3700
+$EndSCHEMATC
