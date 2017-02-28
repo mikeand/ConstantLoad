@@ -82,12 +82,13 @@ $EndComp
 $Comp
 L R R301
 U 1 1 58B3F20D
-P 2860 3370
-F 0 "R301" V 2940 3370 50  0000 C CNN
-F 1 "R" V 2860 3370 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2790 3370 50  0001 C CNN
-F 3 "" H 2860 3370 50  0000 C CNN
-	1    2860 3370
+P 2990 2930
+F 0 "R301" V 3070 2930 50  0000 C CNN
+F 1 "68K" V 2990 2930 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2920 2930 50  0001 C CNN
+F 3 "" H 2990 2930 50  0000 C CNN
+F 4 "Value" H 2990 2930 60  0001 C CNN "MPN"
+	1    2990 2930
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -104,15 +105,15 @@ $EndComp
 $Comp
 L POT RV301
 U 1 1 58B3F21A
-P 2860 2870
-F 0 "RV301" V 2685 2870 50  0000 C CNN
-F 1 "POT" V 2760 2870 50  0000 C CNN
-F 2 "Potentiometers:Potentiometer_Trimmer_Bourns_3006Y" H 2860 2870 50  0001 C CNN
-F 3 "" H 2860 2870 50  0000 C CNN
-	1    2860 2870
-	1    0    0    -1  
+P 2860 3370
+F 0 "RV301" V 2685 3370 50  0000 C CNN
+F 1 "10K" V 2760 3370 50  0000 C CNN
+F 2 "Potentiometers:Potentiometer_Triwood_RM-065" H 2860 3370 50  0001 C CNN
+F 3 "" H 2860 3370 50  0000 C CNN
+	1    2860 3370
+	0    1    1    0   
 $EndComp
-NoConn ~ 2860 2720
+NoConn ~ 2710 3370
 $Comp
 L GND #PWR09
 U 1 1 58B3F222
@@ -154,14 +155,9 @@ Wire Wire Line
 Wire Wire Line
 	3450 2790 3640 2790
 Wire Wire Line
-	2860 3020 2860 3220
-Wire Wire Line
 	3640 2590 3130 2590
 Wire Wire Line
-	3130 2590 3130 3100
-Wire Wire Line
-	3130 3100 2860 3100
-Connection ~ 2860 3100
+	3130 2590 3130 3370
 Wire Wire Line
 	2860 3520 2860 3700
 Wire Wire Line
@@ -174,10 +170,6 @@ Wire Wire Line
 	3490 2240 3330 2240
 Wire Wire Line
 	3330 2240 3330 2350
-Wire Wire Line
-	3010 2870 3060 2870
-Wire Wire Line
-	3060 2870 3060 1810
 Wire Wire Line
 	5590 2060 5590 2490
 $Comp
@@ -192,7 +184,7 @@ F 3 "" H 3460 1720 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3060 1810 3840 1810
+	2990 1810 3840 1810
 Wire Wire Line
 	3460 1720 3460 1810
 Connection ~ 3460 1810
@@ -230,4 +222,24 @@ Wire Wire Line
 Wire Wire Line
 	2860 3700 5340 3700
 Connection ~ 4790 3700
+$Comp
+L CONN_01X01 P301
+U 1 1 58B53821
+P 6520 2880
+F 0 "P301" H 6520 2980 50  0000 C CNN
+F 1 "Heatsink" V 6620 2880 50  0000 C CNN
+F 2 "Current:Heatsink_Aavid_6398BG" H 6520 2880 50  0001 C CNN
+F 3 "" H 6520 2880 50  0000 C CNN
+	1    6520 2880
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3130 3370 3010 3370
+Wire Wire Line
+	2990 3080 2990 3160
+Wire Wire Line
+	2990 3160 3130 3160
+Connection ~ 3130 3160
+Wire Wire Line
+	2990 2780 2990 1810
 $EndSCHEMATC
