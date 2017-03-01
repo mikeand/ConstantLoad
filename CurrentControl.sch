@@ -222,17 +222,6 @@ Wire Wire Line
 Wire Wire Line
 	2860 3700 5340 3700
 Connection ~ 4790 3700
-$Comp
-L CONN_01X01 P301
-U 1 1 58B53821
-P 6520 2880
-F 0 "P301" H 6520 2980 50  0000 C CNN
-F 1 "Heatsink" V 6620 2880 50  0000 C CNN
-F 2 "Current:Heatsink_Aavid_6398BG" H 6520 2880 50  0001 C CNN
-F 3 "" H 6520 2880 50  0000 C CNN
-	1    6520 2880
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3130 3370 3010 3370
 Wire Wire Line
